@@ -12,13 +12,14 @@ public class CorsConfig {
             public void addCorsMappings(CorsRegistry registry) {
 
                 registry.addMapping("/**")
-                        .allowedOrigins(
-                            "http://localhost:3000",
-                            "https://zone-module-frontend.netlify.app"
-                        )
-                        .allowedMethods("*")
-                        .allowedHeaders("*")
-                        .allowCredentials(false);
+        .allowedOrigins(
+            "http://localhost:3000",
+            "https://zone-module-frontend.netlify.app",
+            "https://whimsical-granita-c5b83f.netlify.app" // ADD THIS
+        )
+        .allowedMethods("*")
+        .allowedHeaders("*")
+        .allowCredentials(true); // ✅ CHANGE THIS
             }
         };
     }
