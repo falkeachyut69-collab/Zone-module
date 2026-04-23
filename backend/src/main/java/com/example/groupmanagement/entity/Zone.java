@@ -20,4 +20,9 @@ public class Zone {
  @ManyToOne
 @JoinColumn(name = "brand_id")
 private Brand brand;
+
+public void setBrand(Brand brand) {
+    this.brand = brand;
+}
+
 }
