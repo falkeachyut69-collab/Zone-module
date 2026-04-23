@@ -25,4 +25,8 @@ public void setBrand(Brand brand) {
     this.brand = brand;
 }
 
+public void setZoneName(String zoneName) {
+    this.zoneName = zoneName;
+}
+
 }
